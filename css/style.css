@@ -1,55 +1,75 @@
- 
- *{
-    padding:0px;
-    margin:0px
- }
-
-section{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: 50px auto;
-    
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
- .features-logo {
-    width:50px !important;
-    height: 50px;
+section {
+  padding-top: 50px;
 
+  margin: 50px auto;
+}
+
+#slider {
+  margin: 150px auto;
+  background-image: url("/assets/ring.png");
+  background-repeat: no-repeat;
+  background-position: right top
+
+}
+#university {
+  background-image: url("/assets/ring.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+#form-section{
+  background-image: url("/assets/ring.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+
+}
+
+.features-logo {
+  width: 50px !important;
+  height: 50px;
+}
+
+div.scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
 }
 
 footer {
-    background-color:#1E293B !important;
-} 
-
-footer .copyright {
-    background-color: #0F172A !important;
+  background-color: #1e293b !important;
 }
 
+footer .copyright {
+  background-color: #0f172a !important;
+}
 
 @media only screen and (min-width: 1024px) {
-    .apply-form {
-        position: absolute;
-        width: 400px;
-        padding:10px;
-        top:-100px;
-        right: 200px;
-        margin:auto ;
-        padding-top: 15px 0px;
-
-    }
-    section .university-new{
-        width: 50%
-    }
-    footer {
-        margin-top: 100px;
-    } 
+  .apply-form {
+    position: absolute;
+    width: 400px;
+    padding: 10px;
+    top: -100px;
+    right: 200px;
+    margin: auto;
+    padding-top: 15px 0px;
   }
+  section .university-new {
+    width: 50%;
+  }
+  footer {
+    margin-top: 100px;
+  }
+}
 @media only screen and (min-width: 768px) {
-    .apply-form {
-      
-        width: 450px;
-        padding:10px;
-        height:auto;
-        margin:auto
-    }
+  .apply-form {
+    width: 450px;
+    padding: 10px;
+    height: auto;
+    margin: auto;
   }
+}

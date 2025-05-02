@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
   </head>
   <body>
     <!-- Header Start -->
@@ -18,7 +19,7 @@
       class="container-fluid navbar navbar-expand-lg fixed-top bg-white shadow-sm"
     >
       <nav class="container py-2">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <img src="/assets/logo.png" width="50px" alt="" />
         <button
           class="navbar-toggler"
           type="button"
@@ -90,101 +91,122 @@
     <!-- Main Start-->
 
     <main class="">
-      <!-- hero section -->
-      <section
-        class="container-fluid row pt-5 mt-5 justify-content-center align-items-center"
-      >
-        <div class="col pt-5 d-none d-lg-block">
-          <img src="./assets/womenReadingBook.png" class="img-fluid" alt="" />
-        </div>
-        <div class="col pt-5 align-self-center ms-md-4 ms-2">
-          <h2 class="fw-bold text-success fs-2">
-            Innovation for education and society
-          </h2>
-          <p class="text-body-secondary fw-medium fs-5">
-            Our interdisciplinary majors and minors mean you can chart your own
-            course for academic success.
-          </p>
-          <button
-            type="button"
-            class="btn btn-success rounded-5 py-2 px-4 mb-1 fs-2 text-nowrap"
-          >
-            Visit our Campus
-          </button>
-        </div>
-        <div class="col pt-5 d-none d-sm-block">
-          <img src="./assets/flowerPot-removebg.png" class="img-fluid" alt="" />
+      <!-- hero slider section -->
+      <section class="container-fluid" id="slider">
+        <div class="scroll-container d-flex align-items-center gap-5">
+          <img
+            src="/assets/bookreading.png"
+            alt="Cinque Terre"
+            height="250px"
+          />
+          <div class="slider-campus d-inline-block text-wrap">
+            <h2 class="fw-bold text-success fs-2">
+              Innovation for education and society
+            </h2>
+            <p class="text-body-secondary fw-medium fs-5">
+              Our interdisciplinary majors and minors mean you can chart your
+              own course for academic success.
+            </p>
+            <button
+              type="button"
+              class="btn btn-success rounded-5 py-2 px-4 mb-1 fs-2 text-nowrap"
+            >
+              Visit our Campus
+            </button>
+          </div>
+          <img
+            src="/assets/flowerpot.png"
+            alt="Northern Lights"
+            height="250px"
+          />
         </div>
       </section>
-      <!-- features section start -->
+
+      <!-- formsection -->
       <section class="container">
-        <div class="row text-center row-cols-auto g-4">
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="bg-danger py-5 bg-primary bg-opacity-25 shadow-sm">
-              <img
-                src="./assets/ai-technology_16921675.png"
-                class="features-logo img-fluid"
-                alt=""
+        <form class="bg-primary p-2">
+          <div class="row row-cols-auto flex-wrap g-4 justify-content-center">
+            <div class="col-auto">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open destination</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <input type="date" class="form-control" />
+            </div>
+            <div class="col-auto">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open destination</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-auto">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open destination</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col">
+              <input
+                type="button"
+                class="form-control bg-danger bg-opacity-75"
+                value="Recherge"
               />
-              <h2 class="pt-4">Engineering</h2>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="py-5 bg-success bg-opacity-10 shadow-sm">
-              <img
-                src="./assets/growth_6060964.png"
-                class="features-logo"
-                alt=""
-              />
-              <h2 class="pt-4">Accounting</h2>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="py-5 bg-warning bg-opacity-25 shadow-sm">
-              <img
-                src="./assets/world-creativity-innovation-day_15557915.png"
-                class="features-logo"
-                alt=""
-              />
-              <h2 class="pt-4">Creative</h2>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="py-5 bg-primary bg-opacity-10 shadow-sm">
-              <img
-                src="./assets/design_2011724.png"
-                class="features-logo"
-                alt=""
-              />
-              <h2 class="pt-4">Design</h2>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="py-5 bg-info bg-opacity-25 shadow-sm">
-              <img
-                src="./assets/atom_12007447.png"
-                class="features-logo"
-                alt=""
-              />
-              <h2 class="pt-4">Physics</h2>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="bg-danger py-5 bg-primary bg-opacity-25 shadow-sm">
-              <img
-                src="./assets/science_1440990.png"
-                class="features-logo"
-                alt=""
-              />
-              <h2 class="pt-4">Chemistry</h2>
-            </div>
-          </div>
+        </form>
+      </section>
+      <!-- department section start -->
+      <section class="container mx-auto d-flex justify-content-center">
+        <div class="wrapper">
+          <i id="left" class="fa-solid fas fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card bg-danger bg-opacity-10">
+              <div class="img"><img src="/assets/ai-technology_16921675.png" alt="" draggable="false" /></div>
+              <h2 class="fw-bold ">Engineering</h2>
+               
+            </li>
+            <li class="card bg-success bg-opacity-10">
+              <div class="img"><img src="/assets/growth_6060964.png" alt="" draggable="false" /></div>
+              <h2 class="fw-bold ">Accounting</h2>
+               
+            </li>
+            <li class="card bg-warning bg-opacity-10">
+              <div class="img"><img src="/assets/world-creativity-innovation-day_15557915.png" alt="" draggable="false" /></div>
+              <h2 class="fw-bold ">Creative</h2>
+               
+            </li>
+            <li class="card bg-danger bg-opacity-10">
+              <div class="img"><img src="/assets/design_2011724.png" alt="" draggable="false" /></div>
+              <h2 class="fw-bold ">Design</h2>
+               
+            </li>
+            <li class="card bg-primary bg-opacity-10">
+              <div class="img"><img src="/assets/atom_12007447.png" alt="" draggable="false" /></div>
+              <h2 class="fw-bold ">Physics</h2>
+               
+            </li>
+            <li class="card bg-info bg-opacity-10">
+              <div class="img"><img src="/assets/science_1440990.png" alt="" draggable="false" /></div>
+              <h2 class="fw-bold ">Chemistry</h2>
+               
+            </li>
+          
+          </ul>
+          <i id="right" class="fa-solid fas fa-angle-right"></i>
         </div>
       </section>
-      <!-- features section end -->
+      <!-- department section end -->
 
       <!-- university section end -->
-      <section class="">
+      <section class="university" id="university">
         <div
           class="container row g-4 align-items-start justify-content-center mx-auto"
         >
@@ -192,7 +214,7 @@
             <div>
               <img
                 src="./assets//university.jpg"
-                class="img-fluid w-100"
+                class="img-fluid"
                 alt=""
               />
             </div>
@@ -233,7 +255,7 @@
       <!-- university section end -->
 
       <!-- Form Section start-->
-      <section class="">
+      <section class="" id="form-section">
         <div class="form-section position-relative">
           <div
             class="d-none d-lg-flex align-items-center justify-content-between w-100 bg-black bg-opacity-50 bg-gradient"
@@ -342,14 +364,14 @@
       </section>
       <!-- Form Section end-->
 
-      <!-- university new section -->
+      <!-- university news section -->
       <section class="container">
         <div
           class="d-flex flex-column flex-lg-row gap-4 justify-content-around align-items-center align-items-lg-end mt-lg-5"
         >
           <div class="university-new">
             <h1 class="fw-bold text-success fs-2">Our University News</h1>
-            <p >
+            <p>
               A hundred thousand grateful loves to your dear papa and mamma. Is
               your poor brother recovered of his rack-punch? Oh, dear! How men
               should beware of wicked punch!
@@ -359,25 +381,25 @@
             type="button"
             class="btn btn-success rounded-5 py-2 px-3 mb-1 text-nowrap"
           >
-             All News Post
+            All News Post
           </button>
         </div>
         <div class="row flex-wrap g-4 mt-5">
           <div class="col-12 col-md-6">
-           <div class="">
-            <h1 class="text-black fw-bolder">I am from France</h1>
-            <p class="text-secondary fw-medium">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Provident, ex?
-            </p>
-            <div class="text-secondary d-flex justify-content-between">
-              <div class="d-flex gap-3">
-                <span><i class="fa-solid fa-heart"></i> 23</span>
-                <span><i class="fa-solid fa-comment-sms"></i> 50</span>
+            <div class="">
+              <h1 class="text-black fw-bolder">I am from France</h1>
+              <p class="text-secondary fw-medium">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Provident, ex?
+              </p>
+              <div class="text-secondary d-flex justify-content-between">
+                <div class="d-flex gap-3">
+                  <span><i class="fa-solid fa-heart"></i> 23</span>
+                  <span><i class="fa-solid fa-comment-sms"></i> 50</span>
+                </div>
+                <p>5 Novmber</p>
               </div>
-              <p>5 Novmber</p>
             </div>
-           </div>
           </div>
           <div class="col-12 col-md-6">
             <h1 class="text-black fw-bolder">Out of the Darkness</h1>
@@ -408,7 +430,9 @@
             </div>
           </div>
           <div class="col-12 col-md-6">
-            <h1 class="text-black fw-bolder">How the internet is uniting the world</h1>
+            <h1 class="text-black fw-bolder">
+              How the internet is uniting the world
+            </h1>
             <p class="text-secondary fw-medium">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Provident, ex?
@@ -416,16 +440,17 @@
             <div class="text-secondary d-flex justify-content-between">
               <div class="d-flex gap-3">
                 <span><i class="fa-solid fa-heart"></i> 23</span>
-                <span><i class="fa-solid fa-comment-sms text-success"></i> 50</span>
+                <span
+                  ><i class="fa-solid fa-comment-sms text-success"></i> 50</span
+                >
               </div>
               <p>5 Novmber</p>
             </div>
           </div>
-           
         </div>
       </section>
 
-      <!-- university new section end-->
+      <!-- university news section end-->
     </main>
     <!-- Main ENd -->
 
@@ -573,6 +598,7 @@
       <!-- Copyright -->
     </footer>
     <!-- Footer End -->
+    <script src="/js/slider.js"></script>
     <script
       src="https://kit.fontawesome.com/5733afe841.js"
       crossorigin="anonymous"
