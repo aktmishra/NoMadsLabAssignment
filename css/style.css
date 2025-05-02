@@ -1,0 +1,55 @@
+ 
+ *{
+    padding:0px;
+    margin:0px
+ }
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 50px auto;
+    
+}
+
+ .features-logo {
+    width:50px !important;
+    height: 50px;
+
+}
+
+footer {
+    background-color:#1E293B !important;
+} 
+
+footer .copyright {
+    background-color: #0F172A !important;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .apply-form {
+        position: absolute;
+        width: 400px;
+        padding:10px;
+        top:-100px;
+        right: 200px;
+        margin:auto ;
+        padding-top: 15px 0px;
+
+    }
+    section .university-new{
+        width: 50%
+    }
+    footer {
+        margin-top: 100px;
+    } 
+  }
+@media only screen and (min-width: 768px) {
+    .apply-form {
+      
+        width: 450px;
+        padding:10px;
+        height:auto;
+        margin:auto
+    }
+  }
