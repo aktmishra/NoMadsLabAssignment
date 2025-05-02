@@ -11,19 +11,19 @@ section {
 
 #slider {
   margin: 150px auto;
-  background-image: url("/assets/ring.png");
+  background-image: url("../assets/ring.png");
   background-repeat: no-repeat;
   background-position: right top
 
 }
 #university {
-  background-image: url("/assets/ring.png");
+  background-image: url("../assets/ring.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
 }
 #form-section{
-  background-image: url("/assets/ring.png");
+  background-image: url("../assets/ring.png");
   background-repeat: no-repeat;
   background-position: right center;
 
